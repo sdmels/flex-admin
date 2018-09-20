@@ -1,0 +1,7 @@
+<div class="layout" fxLayout="row" fxLayoutAlign="start stretch">
+  <div class="column1" fxFlex="20%">Column 01</div>
+  <div class="column2" [fxFlex]="variableFlexWidth">Column 02 - <button (click)="toggleHide()">Toggle</button></div>
+  <div class="column3" fxFlex="60%" [fxHide]="hideColumn">Column 03</div>
+</div>
+
+<router-outlet></router-outlet>
